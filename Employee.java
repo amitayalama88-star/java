@@ -1,15 +1,20 @@
-package Welcome;
+package interfaceDemo;
 
 public class Employee {
-	int eno;
-	String ename;
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Employee emp = new Employee();
-		System.out.println(emp.eno + "\t" emp.ename);
-		System.out.println()
-
-	}
-
+	 
+String name;
+int salary;
+public Employee(String name, int salary) {
+	super();
+	this.name = name;
+	this.salary = salary;
+}
+public Employee() {
+	// TODO Auto-generated constructor stub
+}
+@Override
+public String toString() {
+	return "Employee [name=" + name + ", salary=" + salary + "]";
+}
+ 
 }
