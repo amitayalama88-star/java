@@ -1,8 +1,9 @@
-package interfaceDemo;
+package com.in1;
 
-public interface CreditCardPayment extends Payment {
-	public void makePayment() {
-		System.out.println("upi  payment");
-	}
-
+class CreditCardPayment extends Payment {
+    @Override
+    void makePayment(double amount) {
+        System.out.println("Processing Credit Card Payment of: $" + amount);
+        System.out.println("Status: Success (Auth Code: 8829)");
+    }
 }

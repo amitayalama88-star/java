@@ -1,14 +1,17 @@
-package interfaceDemo;
+package com.in1;
 
-public interface Payment {
-	public void makePayment();
-	default void transactionlog()
-	{
-		receipt();
-		System.out.print("trastcation operatiojs");
+public abstract class Payment {
+	//abstract method
+	abstract void makePayment(double amount);
+	void display()
+	{	
+		System.out.println("payment processing");
+		
 	}
-	private void receipt() {
-		System.out.print("paym,ent recepit" );
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
 	}
 
 }
